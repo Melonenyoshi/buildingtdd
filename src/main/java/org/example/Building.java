@@ -20,6 +20,7 @@ public class Building
     public Building(int idInput, String initialResident)
     {
         id = idInput;
+        listofResidents.add(initialResident);
     }
 
     public Building(int idInput, String[] initialResident)
