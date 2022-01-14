@@ -37,4 +37,14 @@ public class BuildingTest
         assertEquals(1, building.getListofResidents().length);
     }
 
+    @Test
+    public void AResidentShouldBeAbleToBeRemoved()
+    {
+        Building building = new Building(1, "Johannes");
+        building.removeResident("Johannes");
+        assertEquals(0, building.getListofResidents().length);
+    }
+
+
+
 }
