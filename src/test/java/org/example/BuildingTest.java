@@ -28,4 +28,6 @@ public class BuildingTest
         building.addResident("John");
         assertEquals(2, building.getListofResidents().length);
     }
+
+
 }

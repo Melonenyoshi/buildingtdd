@@ -35,7 +35,7 @@ public class Building
 
     public void addResident(String residentName)
     {
-
+        listofResidents.add(residentName);
     }
 
     public void removeResident(String residentName)
