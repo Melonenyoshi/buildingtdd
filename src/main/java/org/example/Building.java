@@ -11,12 +11,12 @@ public class Building
     private int id;
     private LinkedList<String> ListofResidents = new LinkedList<>();
 
-    public Building(int id, String initialResident)
+    public Building(int idInput, String initialResident)
     {
-
+        id = idInput;
     }
 
-    public Building(int id, String[] initialResident)
+    public Building(int idInput, String[] initialResident)
     {
 
     }
