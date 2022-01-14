@@ -69,4 +69,13 @@ public class BuildingTest
         assertEquals(residents, building.getListofResidents());
     }
 
+
+    @Test
+    public void TheArrayOfResidentsShouldNotIncreaseIfAResidentIsInTheInitialArray2Times()
+    {
+        String[] residents = new String[]{"Johannes", "John", "Bob", "John"};
+        Building building = new Building(1, residents);
+        assertEquals(3, building.getListofResidents().length);
+    }
+
 }
