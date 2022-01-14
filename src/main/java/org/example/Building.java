@@ -32,4 +32,14 @@ public class Building
     {
         return id;
     }
+
+    public void addResident(String residentName)
+    {
+
+    }
+
+    public void removeResident(String residentName)
+    {
+
+    }
 }

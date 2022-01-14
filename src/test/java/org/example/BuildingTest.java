@@ -15,9 +15,17 @@ public class BuildingTest
     }
 
     @Test
-    public void ifABuildingIsCreatedWithAResidentItShoudldReturnTheResident()
+    public void ifABuildingIsCreatedWithAResidentItShouldContainOne()
     {
         Building building = new Building(1, "Johannes");
-        assertEquals("Johannes", building.getListofResidents()[0]);
+        assertEquals(1, building.getListofResidents().length);
+    }
+
+    @Test
+    public void TheAPersonIsAddedItShouldBeInTHeListOfResidents()
+    {
+        Building building = new Building(1, "Johannes");
+        building.addResident("John");
+        assertEquals(2, building.getListofResidents().length);
     }
 }
