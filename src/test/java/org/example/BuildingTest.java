@@ -29,5 +29,12 @@ public class BuildingTest
         assertEquals(2, building.getListofResidents().length);
     }
 
+    @Test
+    public void TheAPersonShouldNotBeAddedToTheListOfResidentsIfThePersonIsAlreadyIn()
+    {
+        Building building = new Building(1, "Johannes");
+        building.addResident("Johannes");
+        assertEquals(1, building.getListofResidents().length);
+    }
 
 }
