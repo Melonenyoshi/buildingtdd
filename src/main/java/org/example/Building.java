@@ -43,6 +43,6 @@ public class Building
 
     public void removeResident(String residentName)
     {
-
+        listofResidents.remove(residentName);
     }
 }
