@@ -60,6 +60,4 @@ public class BuildingTest
         Building building = new Building(1, residents);
         assertEquals(1, building.getId());
     }
-
-
 }

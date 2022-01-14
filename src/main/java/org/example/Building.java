@@ -25,7 +25,7 @@ public class Building
 
     public Building(int idInput, String[] initialResident)
     {
-
+        id = idInput;
     }
 
     public int getId()
