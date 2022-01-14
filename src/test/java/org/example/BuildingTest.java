@@ -45,6 +45,14 @@ public class BuildingTest
         assertEquals(0, building.getListofResidents().length);
     }
 
+    @Test
+    public void AResidentShouldNotBeAbleToBeRemovedIfheIsntPartOfTheList()
+    {
+        Building building = new Building(1, "Johannes");
+        building.removeResident("John");
+        assertEquals(1, building.getListofResidents().length);
+    }
+
 
 
 
