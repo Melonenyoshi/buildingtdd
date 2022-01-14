@@ -1,13 +1,9 @@
 package org.example;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
 public class BuildingTest
 {
 
@@ -16,5 +12,12 @@ public class BuildingTest
     {
             Building building = new Building(1, "Johannes");
             assertEquals(1, building.getId());
+    }
+
+    @Test
+    public void ifABuildingIsCreatedWithAResidentItShoudldReturnTheResident()
+    {
+        Building building = new Building(1, "Johannes");
+        assertEquals("Johannes", building.getListofResidents()[0]);
     }
 }

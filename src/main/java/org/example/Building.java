@@ -1,6 +1,6 @@
 package org.example;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 /**
  * Hello world!
@@ -9,7 +9,13 @@ import java.util.LinkedList;
 public class Building
 {
     private int id;
-    private LinkedList<String> ListofResidents = new LinkedList<>();
+
+    public String[] getListofResidents()
+    {
+        return listofResidents.toArray(new String[listofResidents.size()]);
+    }
+
+    private ArrayList<String> listofResidents = new ArrayList<>();
 
     public Building(int idInput, String initialResident)
     {
