@@ -23,9 +23,13 @@ public class Building
         listofResidents.add(initialResident);
     }
 
-    public Building(int idInput, String[] initialResident)
+    public Building(int idInput, String[] initialResidents)
     {
         id = idInput;
+        for(String resident : initialResidents)
+        {
+            listofResidents.add(resident);
+        }
     }
 
     public int getId()
