@@ -53,7 +53,13 @@ public class BuildingTest
         assertEquals(1, building.getListofResidents().length);
     }
 
-
+    @Test
+    public void TheIdShouldBeTheInputedValueIfAArrayOfResidentsIsAdded()
+    {
+        String[] residents = new String[]{"Johannes", "John", "Bob"};
+        Building building = new Building(1, residents);
+        assertEquals(1, building.getId());
+    }
 
 
 }
