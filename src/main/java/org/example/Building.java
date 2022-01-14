@@ -35,7 +35,10 @@ public class Building
 
     public void addResident(String residentName)
     {
-        listofResidents.add(residentName);
+        if(!listofResidents.contains(residentName))
+        {
+            listofResidents.add(residentName);
+        }
     }
 
     public void removeResident(String residentName)
