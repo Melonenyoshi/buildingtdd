@@ -28,7 +28,7 @@ public class Building
         id = idInput;
         for(String resident : initialResidents)
         {
-            listofResidents.add(resident);
+            addResident(resident);
         }
     }
 
