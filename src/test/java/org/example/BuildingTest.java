@@ -60,4 +60,13 @@ public class BuildingTest
         Building building = new Building(1, residents);
         assertEquals(1, building.getId());
     }
+
+    @Test
+    public void TheArrayOfResidentsReturnedShouldBeTheEqualToTheOnePutInIfNothingIsModified()
+    {
+        String[] residents = new String[]{"Johannes", "John", "Bob"};
+        Building building = new Building(1, residents);
+        assertEquals(residents, building.getListofResidents());
+    }
+
 }
